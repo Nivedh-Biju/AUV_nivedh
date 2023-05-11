@@ -4,6 +4,6 @@ declare content=ls            #taking ls as input
 content=$( $content | grep .txt )    #filtering only files with .txt extension using pipe and grep
 for n in $content
 do
-  mv $n file$num                                            #renaming by moving it into another file with file and $num as its name
+  mv $n file$num.txt                                            #renaming by moving it into another file with file and $num as its name
   num=$(($num+1))              #updating num's value
 done
